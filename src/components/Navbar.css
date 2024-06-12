@@ -1,0 +1,6 @@
+input::-webkit-input-placeholder {
+    color: white !important;
+  }
+  input {
+    color: white !important;
+  }
