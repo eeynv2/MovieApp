@@ -1,0 +1,47 @@
+
+.action-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .action-card .card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .action-card .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 12px;
+  }
+  
+  .action-card .card-title {
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .action-card .card-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+  }
+  
+  .action-card .rating,
+  .action-card .genre {
+   
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
