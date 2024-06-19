@@ -10,11 +10,9 @@ interface NavBarProps {
 }
 
 function Navbar(props: NavBarProps) {
-
-  //const searchStyle = {font-colo: "white"};
   return (
     <div>
-      <nav className="navbar navbar-expand-lg text-light bg-dark justify-content-between">
+      <nav className="navbar navbar-expand-lg text-light bg-transparent justify-content-between">
         <div className="container-fluid">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -31,12 +29,9 @@ function Navbar(props: NavBarProps) {
                   Add Movie
                 </Link>
               </li>
-
-
-
             </ul>
             <div className="d-flex justify-content-between text-white">
-              <input className="form-control me-2 bg-dark " type="search" value={props.searchQuery} onChange={props.handleSearchChange} placeholder="Search Movies" aria-label="Search" />
+              <input className="form-control me-2 bg-dark search-nav" type="search" value={props.searchQuery} onChange={props.handleSearchChange} placeholder="Search Movies" aria-label="Search" />
             </div>
           </div>
         </div>

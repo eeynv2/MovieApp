@@ -51,9 +51,7 @@ function App() {
     <div className="App ">
       <div className="container ">
         <Navbar name="Hello" searchQuery={searchQuery} handleSearchChange={handleSearchChange}></Navbar>
-
         <Routes>
-
           <Route path="/AddMovie" element={<AddMovie onMovieAdded={fetchMovies} ></AddMovie>}></Route>
           <Route path="/" element={
             <>
@@ -72,12 +70,10 @@ function App() {
                     ></Card>
                   ))}
                 </div>
-
               </div>
 
               <div className="container">
                 <div className="row">
-
                   {topRatedMovies.map((movie, index) => (
                     <Card
                       key={index}
@@ -90,16 +86,11 @@ function App() {
                     ></Card>
                   ))}
                 </div>
-
               </div>
             </>
           }>
-
           </Route>
         </Routes>
-
-
-
       </div>
     </div>
   );

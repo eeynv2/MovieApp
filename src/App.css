@@ -1,6 +1,31 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-align: center;
   background-color: black;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
 }
 
 .App-logo {
@@ -23,7 +48,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  
+
 }
 
 .App-link {
@@ -34,7 +59,18 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
 }
