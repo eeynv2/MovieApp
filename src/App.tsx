@@ -19,9 +19,12 @@ function App() {
     setSearchQuery(query);
     filterMovies(query);
   }
-  let sortedMovies = [...movies];
-  sortedMovies.sort((a, b) => b.rating - a.rating);
-  setTopRatedMovies(sortedMovies);
+
+  useEffect(() => {
+    let sortedMovies = [...movies];
+    sortedMovies.sort((a, b) => b.rating - a.rating);
+    setTopRatedMovies(sortedMovies);
+  }, [movies]);
 
   const fetchMovies = () => {
     fetch("http://localhost:3000/movies")
