@@ -14,7 +14,6 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  height: 100%;
   text-align: center;
   background-color: black;
 }
@@ -74,10 +73,47 @@ body {
   padding: 1rem;
   z-index: 1000;
 }
-.top-rated{
+
+.top-rated {
   font-weight: bold;
 }
 
-#root{
-  background-color: black;
+.top-rated-cards {
+  display: flex;
+  /* Display children in a row */
+  flex-wrap: nowrap;
+  /* Prevent wrapping to ensure all cards stay in a row */
+  /* overflow-x: auto; */
+  /* Allow horizontal scrolling if cards exceed container width */
+  gap: 10px;
+  /* Space between cards */
+  padding: 10px;
+  /* Padding around the cards */
+  overflow-x: hidden; /* Hide overflow to prevent scroll bar */
+  position: relative; /* Required for absolute positioning of arrow */
+}
+
+/* Scroll arrow */
+.scroll-arrow {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  height: 100%;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll-arrow:before {
+  content: '\u25BA';
+  font-size: 20px;
+  color: white;
 }

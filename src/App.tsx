@@ -57,26 +57,26 @@ function App() {
               <div className="container top-rated-container pt-24">
                 <div className="row">
                   <h5 className="top-rated text-white text-start font-weight-bold pb-3 pt-3">Top Rated</h5>
-
-                  {topRatedMovies.map((movie, index) => (
-                    <Card
-                      key={index}
-                      type={movie.type}
-                      title={movie.title}
-                      imgUrl={movie.imgUrl}
-                      genre={movie.genre}
-                      rating={movie.rating}
-                      ageRating={movie.ageRating}
-                      isTopRated={true}
-                    ></Card>
-                  ))}
+                  <div className="top-rated-cards">
+                    {topRatedMovies.map((movie, index) => (
+                      <Card
+                        key={index}
+                        type={movie.type}
+                        title={movie.title}
+                        imgUrl={movie.imgUrl}
+                        genre={movie.genre}
+                        rating={movie.rating}
+                        ageRating={movie.ageRating}
+                        isTopRated={true}
+                      ></Card>
+                    ))}
+                  </div>
                 </div>
               </div>
 
               <div className="container all-movies">
                 <div className="row">
-                  <h5 className="text-white text-start font-weight-bold pb-3 pt-3">All Movies</h5>
-
+                  <h5 className="top-rated text-white text-start font-weight-bold pb-3 pt-5">All Movies</h5>
                   {filteredMovies.map((movie, index) => (
                     <Card
                       key={index}
@@ -90,6 +90,7 @@ function App() {
 
                     ></Card>
                   ))}
+
                 </div>
               </div>
             </>

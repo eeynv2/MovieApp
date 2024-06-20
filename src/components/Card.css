@@ -1,6 +1,10 @@
+.card {
+  border: none !important;
+  position: relative; 
+}
+
 .action-card {
   position: relative;
-  overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 20px !important;
   border-color: black;
@@ -59,11 +63,12 @@
 .top-rated-card {
   border-radius: 20px !important;
   border-color: black;
+  
 }
 
 .top-rated-card .card-img-top {
   width: 100%;
-  height: 200px;
+  height: 175px;
   object-fit: cover;
 }
 
@@ -110,4 +115,47 @@
   font-size: 14px;
   color: white;
   font-weight: bold;
+}
+
+.card-img-overlay.custom {
+  height: 25%;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  font-size: x-small;
+}
+
+.card-img-top {
+  border-radius: 20px !important;
+}
+
+.rating-text {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.film-caption {
+  padding-top: 2.5%;
+  font-size: 10pt;
+}
+
+.film-rating {
+  padding-top: 1%;
+  padding-bottom: 2.5%;
+  font-size: 10pt;
+}
+
+.rating-number {
+  position: absolute;
+  font-size: 85pt;
+  left: -35px;
+  font-weight: 600;
+}
+
+.horizontal-scrollable>.row {
+  overflow-x: auto;
+  white-space: nowrap;
 }
