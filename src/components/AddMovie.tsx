@@ -1,5 +1,4 @@
 
-import React from "react";
 import "./AddMovie.css";
 import { useState, useEffect } from "react";
 import { CardProps } from "./Card";
@@ -143,8 +142,4 @@ function AddMovie({ onMovieAdded }: any) {
     );
 }
 
-
 export default AddMovie;
-
-
-

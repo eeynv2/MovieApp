@@ -6,7 +6,6 @@ interface NavBarProps {
   name: string;
   searchQuery: string;
   handleSearchChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-
 }
 
 function Navbar(props: NavBarProps) {
@@ -39,8 +38,6 @@ function Navbar(props: NavBarProps) {
     </div >
   )
 }
-
-
 
 export default Navbar;
 

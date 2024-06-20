@@ -1,6 +1,7 @@
 input.search-nav::-webkit-input-placeholder {
-    color: white !important;
-  }
-  input.search-nav {
-    color: white !important;
-  }
+  color: white !important;
+}
+
+input.search-nav {
+  color: white !important;
+}

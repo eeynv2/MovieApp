@@ -2,6 +2,7 @@
 input::-webkit-input-placeholder {
   color: red;
 }
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif !important;
@@ -10,11 +11,7 @@ body {
   background-color: black;
 }
 
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-#root{
-  background-color: black;
 }

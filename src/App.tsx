@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
@@ -8,7 +7,6 @@ import { Route, Routes } from "react-router-dom";
 import AddMovie from "./components/AddMovie";
 
 function App() {
-
   const [movies, setMovies] = useState<CardProps[]>([]);
   const [filteredMovies, setFilteredMovies] = useState<CardProps[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -54,7 +52,6 @@ function App() {
         <Routes>
           <Route path="/AddMovie" element={<AddMovie onMovieAdded={fetchMovies} ></AddMovie>}></Route>
           <Route path="/" element={
-
             <>
               <br></br>
               <div className="container top-rated-container pt-24">
